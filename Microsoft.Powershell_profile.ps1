@@ -156,7 +156,7 @@ function NewInstall() {
         signal, whatsapp
 
     # Game dev
-    InstallFromScoop -Items reshade
+    InstallFromScoop -Items reshade, godot-mono
 
     # Tools
     InstallFromScoop -Items 7zip, typora, `
