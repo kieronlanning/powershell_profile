@@ -190,6 +190,7 @@ function NewInstall() {
     go install github.com/liamg/comet@latest
 
     yarn config set --home enableTelemetry 0
+    oh-my-posh disable notice
 
     NewInstallAdmin
 
