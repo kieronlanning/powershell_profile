@@ -256,9 +256,11 @@ function NewInstall() {
     if (!$IS_INSTALLED) {
         Invoke-WebRequest -useb get.scoop.sh | Invoke-Expression
 
-        scoop install aria2 scoop-search
+        scoop install aria2 scoop-search git
         scoop config aria2-enabled true
         scoop config aria2-warning-enabled false
+
+        git config --global credential.helper manager
     }
 
     scoop bucket add extras
